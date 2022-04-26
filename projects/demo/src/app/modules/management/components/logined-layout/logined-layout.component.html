@@ -1,0 +1,29 @@
+<div>USER ID: {{userId}}</div>
+
+<ul>
+  <li *hasPermission="'CG_Page1'">You have CG_Page1 permission</li>
+  <li *lackPermission="'CG_Page1'">You dont't have CG_Page1 permission</li>
+  <li><a routerLink="/management/page1">Page 1</a></li>
+  <li>
+    <ul>
+      <li><a routerLink="/management/page1/page1-2">Page 1-2</a></li>
+    </ul>
+  </li>
+  <li *hasPermission="'CG_Page2'">You have CG_Page2 permission</li>
+  <li *lackPermission="'CG_Page2'">You dont't have CG_Page2 permission</li>
+  <li><a routerLink="/management/page2">Page 2</a></li>
+  <li *hasPermission="'CG_Page3'">You have CG_Page3 permission</li>
+  <li *lackPermission="'CG_Page3'">You dont't have CG_Page3 permission</li>
+  <li><a routerLink="/management/page3">Page 3</a></li>
+</ul>
+<p *lackPermissionOne="'CG_Page1,CG_Page3'" style="color: red">
+  You have lack any permission: either CG_Page1 or CG_Page3
+</p>
+<p *lackPermissionAll="'CG_Page1,CG_Page2'" style="color: red">
+  You have lack all permission: CG_Page1 and CG_Page2
+</p>
+<button (click)="logout()">Logout</button>
+&nbsp;
+<button (click)="logoutByApi()">Logout by api</button>
+
+<router-outlet></router-outlet>

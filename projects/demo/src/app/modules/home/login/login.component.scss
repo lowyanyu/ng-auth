@@ -1,0 +1,91 @@
+$login-height: 550px;
+$bg-width: 263px;
+$form-width: 385px;
+$border-color: #fff;
+$em-color: #113F67;
+
+.login-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-label {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0;
+  span {
+    font-size: 25px;
+    margin-left: 7.41px;
+    color: $em-color;
+  }
+}
+
+form .login-form{
+  position: absolute;
+  top: 86.33px;
+  bottom: 0px;
+  left: 373.52px;
+  right: calc(373.52px + $form-width);
+}
+
+input::placeholder {
+  font-size: 16px !important;
+}
+
+.login-btn {
+  position: absolute;
+  bottom: 75.5px;
+  right: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  // input outline color
+  input {
+    color: #333333!important;
+    padding: 10px;
+  }
+
+  input.ng-invalid.ng-touched {
+    border-color: red;
+  }
+
+}
+
+.mat-raised-button {
+  width: 253px!important;
+  height: 41px!important;
+  font-size: 25px!important;;
+}
+
+.login-card {
+  display: flex;
+  width: 850px;
+  height: $login-height;
+  padding: 0px;
+  // background-image: url('/assets/images/1zSIGN_SignUp@2x.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: $bg-width $login-height;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 385px;
+  margin: 0;
+}
+
+.login-form > * {
+  width: 100%;
+}

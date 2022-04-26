@@ -1,0 +1,18 @@
+{
+  "name": "@cg/ng-auth",
+  "version": "4.1.0",
+  "description": "Use JWT token to auth",
+  "keywords" :["Angular", "Library", "auth", "authentication", "authorization"],
+  "repository": {
+    "type" : "git",
+    "url" : "http://gitlab.intranet/component/ng-auth"
+  },
+  "peerDependencies": {
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "@cg/ng-httphandler": "^2.0.0"
+  }
+}

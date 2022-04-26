@@ -1,0 +1,11 @@
+<p>
+  page1 works!
+</p>
+
+<p>Having {{amount}} users</p>
+<div *ngFor="let u of userList">
+  {{u.userId}}, {{u.userName}}
+</div>
+<br/>
+<button *isAuthenticated (click)="getUserPageListFail()">GET 401 to test refresh</button>
+<div *hasPermission="'CG_Page3'">CG_Page3</div>

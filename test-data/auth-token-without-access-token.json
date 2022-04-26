@@ -1,0 +1,13 @@
+{
+  "refreshToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKV1RUb2tlbiIsInVzZXJfaWQiOjIwMCwiaXNzIjoiRG9jRm9ybSIsImZvciI6MiwidHlwZSI6MiwiZXhwIjoxNTUzODUwMzEzfQ.QIcZS5HD-19f_zBEJ_sDfXQamPGYG9ycxFptHI8IeaI",
+  "expiresIn": 900,
+  "tokenType": "Bearer",
+  "scope": [
+    { "permissionName": "CG_UserSearch", "permissionClass": "User" },
+    { "permissionName": "CG_UserNew", "permissionClass": "User" }
+  ],
+  "userInfo": {
+    "userName": "admin",
+    "cname": "Administrator"
+  }
+}

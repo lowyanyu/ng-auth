@@ -1,0 +1,18 @@
+<div class="login-wrapper">
+  <div class="login-container">
+    <div class="login-card">
+      <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
+        <div class="login-form">
+          <div class="mat-label"><span>Account *</span></div>
+          <input type="text" formControlName="loginAccount" placeholder="Please Enter Your Account"/>
+          <div class="mat-label"><span>Password *</span></div>
+          <input type="password" formControlName="loginPwd" placeholder="Please Enter Your Password"/>
+          <span *ngIf="alertMessage" type="danger">{{alertMessage}}</span>
+          <div class="login-btn">
+            <button class="mat-raised-button" type="submit">Sign In</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
